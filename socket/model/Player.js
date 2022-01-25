@@ -13,6 +13,15 @@ class Player {
   sendMoneyTo(receiver, amount) {
     receiver.addMoney(amount);
   }
+
+  equals(id) {
+    return this.name === id
+  }
+
+  get money() {
+    return this.fund;
+  }
+
 }
 
 module.exports = Player;
